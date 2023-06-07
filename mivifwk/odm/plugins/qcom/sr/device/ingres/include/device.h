@@ -1,0 +1,34 @@
+#ifndef __DEVICE_H__
+#define __DEVICE_H__
+
+#ifndef TETRAS3_CAMERA_INFO_LIST
+#ifndef TETRAS3_CAMERA_INFO_LIST_WIDE
+#ifndef TETRAS3_CAMERA_INFO_LIST_WIDE_INDEX
+#define TETRAS3_CAMERA_INFO_LIST_WIDE_INDEX RoleIdRearWide
+#endif
+#ifndef TETRAS3_CAMERA_INFO_LIST_WIDE_VALUE
+#ifndef TETRAS3_CAMERA_INFO_LIST_WIDE_ID
+#define TETRAS3_CAMERA_INFO_LIST_WIDE_ID SR_CAMERA_ID_L10_WIDE_IMX686
+#endif
+#ifndef TETRAS3_CAMERA_INFO_LIST_WIDE_NAME
+#define TETRAS3_CAMERA_INFO_LIST_WIDE_NAME "wide"
+#endif
+#ifndef TETRAS3_CAMERA_INFO_LIST_WIDE_PIXEL_DEPTH
+#define TETRAS3_CAMERA_INFO_LIST_WIDE_PIXEL_DEPTH PIXEL_DEPTH_8BIT
+#endif
+#define TETRAS3_CAMERA_INFO_LIST_WIDE_VALUE                                   \
+    {                                                                         \
+        TETRAS3_CAMERA_INFO_LIST_WIDE_ID, TETRAS3_CAMERA_INFO_LIST_WIDE_NAME, \
+            TETRAS3_CAMERA_INFO_LIST_WIDE_PIXEL_DEPTH                         \
+    }
+#endif
+#define TETRAS3_CAMERA_INFO_LIST_WIDE \
+    [TETRAS3_CAMERA_INFO_LIST_WIDE_INDEX] = TETRAS3_CAMERA_INFO_LIST_WIDE_VALUE
+#endif
+#define TETRAS3_CAMERA_INFO_LIST       \
+    {                                  \
+        TETRAS3_CAMERA_INFO_LIST_WIDE, \
+    }
+#endif
+
+#endif
