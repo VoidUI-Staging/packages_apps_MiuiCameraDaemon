@@ -1,0 +1,7 @@
+// Android.bp
+
+// Include the jni/Android.bp module
+subdirs = [
+    "jni",
+    "mivifwk",
+]
